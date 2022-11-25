@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.767);
+  /* padding: 3.2rem; */
+}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.945) 25%,
+      rgba(61, 61, 61, 0.699)
+    ),
+    url(img/hero.png);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  overflow: scroll;
+}
+.nav-list-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.062);
+  background: linear-gradient(
+    to right bottom,
+    rgba(20, 20, 20, 0.185),
+    rgba(61, 61, 61, 0.247)
+  );
+}
+.nav-list-item:link,
+.nav-list-item:visited {
+  color: rgba(255, 255, 255, 0.781);
+  text-decoration: none;
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.082);
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.nav-list-item:hover,
+.nav-list-item:active {
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+  border-right: 0.1rem solid rgba(255, 255, 255, 0.521);
+  transform: rotate(5deg);
+}
+.logo-icon {
+  height: 5rem;
+  transform: translateY(0.9rem);
+  margin-right: 2rem;
+}
+.primary-heading {
+  font-size: 4.8rem;
+  letter-spacing: 0.3rem;
+  /* display: flex;
+  gap: 2rem;
+  align-items: center; */
+  color: rgba(255, 255, 255, 0.801);
+  animation: animation 2s ease-out;
+}
+.wiki {
+  color: rgb(136, 136, 136);
+  text-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.438);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 2.4rem;
+  display: inline-block;
+  transform: rotate(50deg);
+}
+.text-box {
+  padding: 3.2rem;
+  max-width: 70rem;
+  transform: translateY(10%);
+}
+.text-box2 {
+  animation: animation2 2s ease-out;
+  padding: 3.4rem;
+}
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+}
+@keyframes animation2 {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+}
